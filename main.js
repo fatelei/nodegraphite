@@ -2,4 +2,4 @@
 
 var GraphiteClient = require("./lib/graphite").GraphiteClient;
 
-exports.graphite = GraphiteClient
+module.exports = GraphiteClient
