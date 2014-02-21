@@ -1,0 +1,11 @@
+{
+	"name": "nodegraphite",
+	"version": "1.0.0",
+	"description": "node client for graphite",
+	"author": {
+		"name": "王磊",
+		"email": "fatelei@gmail.com",
+		"url": "https://github.com/fatelei"
+	},
+	"main": "main.js"
+}
