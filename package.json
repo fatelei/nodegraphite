@@ -1,6 +1,6 @@
 {
 	"name": "nodegraphite",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "node client for graphite",
 	"author": {
 		"name": "王磊",
