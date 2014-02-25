@@ -8,5 +8,6 @@
 		"url": "https://github.com/fatelei"
 	},
 	"main": "main.js",
+	"homepage": "https://github.com/fatelei/nodegraphite",
 	"keywords": ["graphite"]
 }
