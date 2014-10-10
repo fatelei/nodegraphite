@@ -1,16 +1,19 @@
 {
-	"name": "nodegraphite",
-	"version": "1.0.7",
-	"description": "node client for graphite",
-	"author": {
-		"name": "王磊",
-		"email": "fatelei@gmail.com",
-		"url": "https://github.com/fatelei"
-	},
-	"main": "main.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/fatelei/nodegraphite"
-	},
-	"keywords": ["graphite"]
+    "name": "nodegraphite",
+    "version": "2.0.0",
+    "description": "node client for graphite",
+    "author": {
+        "name": "王磊",
+        "email": "fatelei@gmail.com",
+        "url": "https://github.com/fatelei"
+    },
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fatelei/nodegraphite"
+    },
+    "devDependencies": {
+        "mocha": "*"
+    },
+    "keywords": ["graphite"]
 }

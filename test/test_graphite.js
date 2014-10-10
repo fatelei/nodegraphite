@@ -1,17 +1,34 @@
-var GraphiteClient = require("../main");
+/**
+ * Unittest for graphiteclient lib
+ *
+ * You can the host for your test.
+ */
 
-var client = new GraphiteClient(2003, "192.168.56.102");
+var GraphiteClient = require('../main');
+var host = 'localhost';
+var port = 2003;
 
-if (require.main === module) {
-  for (var i = 0; i < 20; i++) {
-    (function () {
+describe('Test graphiteclient', function () {
+  var client = null;
+
+  before(function () {
+    client = new GraphiteClient(port, host);
+  });
+
+  describe('Write data to graphite server', function () {
+    it('it should be ok', function (done) {
       client.write({'foo': 23}, function (err) {
         if (err) {
           console.log(err);
         } else {
           console.log('write ok');
         }
+        done();
       });
-    })(); 
-  }
-}
+    });
+  });
+
+  after(function () {
+    client.close();
+  });
+});
