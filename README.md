@@ -29,7 +29,7 @@ Initialize a new graphite client.
 + port {String}: graphite server port, default is 2003
 + host {String}: graphite server host, default is localhost
 
-#### Usage
+###### Usage
 
 ```
 var GraphiteClient = require('nodegraphite');
@@ -43,7 +43,7 @@ Write metrics data to grapite server.
 + metrics {Object}: data sended to graphite, {metric: value}
 + callback {Function}: optional callback function, the callback function will take two parameters (err, data)
 
-#### Usage
+###### Usage
 
 ```
 cli.once('error', function (err) {
