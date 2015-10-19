@@ -4,10 +4,6 @@ TIMEOUT = 10000
 MOCHA_OPTS =
 
 test:
-	@NODE_ENV=test ./node_modules/mocha/bin/mocha \
-	  --reporter $(REPORTER) \
-	  --timeout $(TIMEOUT) \
-	  $(MOCHA_OPTS) \
-	  $(TESTS)
+	@NODE_ENV=test ./node_modules/jasmine/bin/jasmine.js
 
 .PHONY:test
