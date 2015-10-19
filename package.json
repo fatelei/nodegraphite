@@ -1,6 +1,6 @@
 {
     "name": "nodegraphite",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "node client for graphite",
     "author": {
         "name": "王磊",
@@ -13,7 +13,14 @@
         "url": "https://github.com/fatelei/nodegraphite"
     },
     "devDependencies": {
-        "mocha": "*"
+        "jasmine": "~2.3.2"
     },
-    "keywords": ["graphite"]
+    "dependencies": {
+        "debug": "~2.2.0"
+    },
+    "engines": {
+        "node": ">=4.2.1"
+    },
+    "keywords": ["graphite"],
+    "license": "ISC"
 }
