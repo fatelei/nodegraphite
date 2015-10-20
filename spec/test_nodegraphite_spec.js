@@ -16,7 +16,11 @@ describe('Test graphiteclient', function () {
   });
 
   describe('Write data to graphite server', function () {
-    it('it should be failed', function () {
+    it('it should be failed', function (done) {
+      client.once('error', function (err) {
+        console.log(err);
+        done();
+      });
       client.write({'foo': 23});
     });
   });
